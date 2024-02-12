@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Registration</title>
+    
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400&display=swap');
+        @keyframes wawes {
+  from {
+      transform: rotate(0);
+  }
+  to {
+      transform: rotate(360deg);
+  }
+}
+
+body {
+  /* background: url(signupback.png) no-repeat; */
+  background-color: whitesmoke;
+  background-size: 105%;
+  font-family: 'Poppins', sans-serif;
+}
+
+.image-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  margin-top: 4%;
+}
+
+.login {
+  overflow: hidden;
+  background-color: #d0d0d0;
+  padding: 10px 30px 30px 30px;
+  border-radius: 10px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 400px;
+  transform: translate(-50%, -50%);
+  transition: transform 300ms, box-shadow 300ms;
+  box-shadow: 5px 10px 10px rgba(2, 128, 144, 0.2);
+}
+
+.login::before,
+.login::after {
+  content: '';
+  position: absolute;
+  width: 600px;
+  height: 600px;
+  border-top-left-radius: 40%;
+  border-top-right-radius: 45%;
+  border-bottom-left-radius: 35%;
+  border-bottom-right-radius: 40%;
+  z-index: -1;
+}
+
+.login::before {
+  left: 40%;
+  bottom: -130%;
+  background-color: rgba(208, 56, 56, 0.805);
+  animation: wawes 6s infinite linear;
+}
+
+.login::after {
+  left: 35%;
+  bottom: -160%;
+  background-color: rgba(183, 16, 16, 0.874);
+  animation: wawes 7s infinite;
+}
+
+.login > input {
+  font-family: 'Poppins', sans-serif;
+  display: block;
+  border-radius: 5px;
+  font-size: 16px;
+  background: white;
+  width: 100%;
+  border: 0;
+  padding: 10px 10px;
+  margin: 15px -10px;
+}
+
+.login > button {
+  font-family: 'Poppins', sans-serif;
+  cursor: pointer;
+  color: #fff;
+  font-size: 16px;
+  text-transform: uppercase;
+  width: 80px;
+  border: 0;
+  padding: 10px 0;
+  margin-top: 10px;
+  margin-left: -5px;
+  border-radius: 5px;
+  background-color:rgba(183, 16, 16, 0.874);
+  transition: background-color 300ms;
+}
+
+.login > button:hover {
+  background-color: #d8d3d3;
+  color: black;
+}
+
+a {
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.6);
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
+  font-size: 12px;
+}
+
+/* Media Queries for responsiveness */
+@media screen and (max-width: 768px) {
+  .login {
+      width: 90%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .login {
+      width: 100%;
+  }
+}
+
+    </style>
+</head>
+<body>
+  <div class="image-container">
+    <img id="logo" src="KLR WEB.png" alt="Logo" width="279px">
+</div> 
+    <form class="login"> 
+    <h2 style="text-align: center ; font-family: 'Poppins', sans-serif; font-size: x-large;">SignUp</h2>
+        <input type="email" placeholder="Email">
+        <input type="password" placeholder="Password">
+        <button>SignUp</button>
+        <a style="font-size: large; text-decoration: none; margin-bottom: 30px; color: #fff; margin-right: 20px; font-family: 'Poppins', sans-serif;" href="login.html">Login</a>
+    </form>
+
+    <!-- Add a script tag to add the click event listener -->
+    <script>
+        // Select the logo element by ID
+        var logo = document.getElementById('logo');
+
+        // Add a click event listener to the logo
+        logo.addEventListener('click', function() {
+            // Redirect to the desired URL when the logo is clicked
+            window.location.href = 'index.html';
+        });
+    </script>
+</body>
+</html>

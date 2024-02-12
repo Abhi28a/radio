@@ -382,12 +382,12 @@ font-family: 'Skranji', cursive;
     position: relative;
     width: 100%;
     height: auto;
-    top: 54vh;
+    top: 40vh;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    padding-top: 3vh;
+    padding-top: 1%;
     background: transparent;
     font-family: 'Poppins',sans-serif;
 }
