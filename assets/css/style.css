@@ -221,7 +221,7 @@ font-family: 'Skranji', cursive;
 }
 .wings {
     position: relative;
-    width: 85%;
+    width: 70%;
     height: auto;
     display: flex;
     flex-wrap: wrap;
@@ -266,8 +266,8 @@ font-family: 'Skranji', cursive;
     border: 3px solid rgb(128, 128, 128);
 }
 .iframe iframe {
-    width: 700px;
-    height: 500px;
+    width: 600px;
+    height: 300px;
 }
 .live-video {
     position: relative;
