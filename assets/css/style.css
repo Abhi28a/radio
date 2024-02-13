@@ -221,7 +221,7 @@ font-family: 'Skranji', cursive;
 }
 .wings {
     position: relative;
-    width: 70%;
+    width: 85%;
     height: auto;
     display: flex;
     flex-wrap: wrap;
